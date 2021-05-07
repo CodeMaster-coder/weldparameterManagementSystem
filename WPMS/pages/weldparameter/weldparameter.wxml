@@ -1,0 +1,197 @@
+<!--pages/weldparameter/weldparameter.wxml-->
+<!--主框-->
+<view class='mainbox'>
+<!--焊点基本信息框-->
+<view class="basicInfoTitle" hover-class="none" hover-stop-propagation="false">
+    焊点基本信息
+</view>
+<view class='top'>
+    <view class='top-text'>工段</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>班组</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>焊枪</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>车型</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>程序号</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>焊点编号</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>板厚1（mm）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>板厚2（mm）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>板厚3（mm）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>板厚4（mm）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <text>{{area_name}}</text>
+    </view>
+  </view>
+  <!--焊接参数框-->
+<view class="basicInfoTitle" hover-class="none" hover-stop-propagation="false">
+    焊点焊接参数
+</view>
+<view class='top'>
+    <view class='top-text'>预压时间（ms）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+<view class='top'>
+    <view class='top-text'>预热时间（ms）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>预热电流（KA）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>冷却时间（ms）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>上升斜坡（ms）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+    <view class='top'>
+    <view class='top-text'>起始电流（KA）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>终止电流（KA）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>焊接电流（KA）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>焊接时间（ms）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>下降斜坡（ms）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>起始电流（KA）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>终止电流（KA）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>脉冲</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>脉冲间隔（ms）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>保持时间（ms）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>焊接压力（KN）</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>修磨点数</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+      <view class='top'>
+    <view class='top-text'>修磨次数</view>
+    <view class='top-selected' bindtap='bindShowMsg'>
+     <input type="number"></input>
+    </view>
+  </view>
+</view>
+<view class="editButton">
+    <button class="btn"  >
+        查询
+    </button>
+    <button class="btn"  >
+        更改
+    </button>
+    <button class="btn"  >
+       确认
+    </button>
+</view>
+
