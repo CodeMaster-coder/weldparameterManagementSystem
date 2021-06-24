@@ -1,0 +1,85 @@
+/* pages/assignment/assignment.wxss */
+.aufbau1{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 120rpx;
+  border-top:3rpx solid  	#D3D3D3;
+  border-bottom:3rpx solid  	#D3D3D3;
+  margin-bottom: 10rpx;
+  background-color: #f4f6f8;
+}
+.leftside{
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 40%;
+}
+.aufbau1round{
+  width: 40rpx;
+  height: 40rpx;
+  background-color: #FF6347;
+  border-radius: 40rpx;
+  margin-right: 20rpx;
+}
+.aufbau1num{
+  text-align: center;
+  line-height: 40rpx;
+  color: white;
+}
+.middleside{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+.middlesidetitle{
+  color:  	#696969;
+  font-size: 23rpx;
+  margin-bottom: 10rpx;
+}
+.searchbox{
+  width: 150rpx;
+  height: 40rpx;
+  border: 5rpx solid #ADD8E6;
+  border-radius: 10rpx;
+}
+.placeholder{
+  position: absolute;
+  z-index: 0;
+}
+.searchcube{
+  text-align: center;
+  line-height: 40rpx;
+}
+.scroll-view{
+  position: absolute;
+  width: 150rpx;
+  background-color:  	#e3f0f8;
+  z-index: 999;
+}
+.msg-item{
+  width: 150rpx;
+  height: 40rpx;
+  border-bottom: 3rpx solid #ADD8E6;
+}
+.rightside{
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+.certainbtn{
+  width: 150rpx;
+  height: 50rpx;
+  background-color: #00BFFF;
+  text-align: center;
+  line-height: 50rpx;
+  font-size: 28rpx;
+  border-radius: 50rpx;
+}

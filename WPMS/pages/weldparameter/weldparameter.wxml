@@ -1,73 +1,107 @@
 <!--pages/weldparameter/weldparameter.wxml-->
 <!--主框-->
-<view class='mainbox'>
+
 <!--焊点基本信息框-->
-<view class="basicInfoTitle" hover-class="none" hover-stop-propagation="false">
+<watermark></watermark>
+<view class="basicInfoTitle" >
     焊点基本信息
 </view>
 <view class='top'>
     <view class='top-text'>工段</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
+    <view class='top-selected' bindtap='areaoptions' >
      <text>{{area_name}}</text>
-     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+
+     <image src='https://i.loli.net/2021/06/03/KtpH1D8dhjxXsfe.png'></image>
+
+     <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{area}}" wx:key="unique">
+     <cover-view class="selected" bindtap="selectedone" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
     </view>
+
   </view>
   <view class='top'>
     <view class='top-text'>班组</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <text>{{area_name}}</text>
-     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+    <view class='top-selected' bindtap='subAreaoptions' >
+     <text>{{subArea_name}}</text>
+ 
+     <image src='https://i.loli.net/2021/06/03/19lKJj8GyV7ehnW.png'></image>
+
+    <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{subArea}}" wx:key="unique">
+     <cover-view class="selected" bindtap="subAreaSelected" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
     </view>
   </view>
   <view class='top'>
     <view class='top-text'>焊枪</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <text>{{area_name}}</text>
-     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+    <view class='top-selected' bindtap='gunoptions'>
+     <text>{{gun_name}}</text>
+
+     <image src='https://i.loli.net/2021/06/03/Me4bRT5DZAlIWfS.png'></image>
+
+    <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{gun}}" wx:key="unique">
+     <cover-view class="selected" bindtap="gunSelected" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
     </view>
+
   </view>
   <view class='top'>
     <view class='top-text'>车型</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <text>{{area_name}}</text>
-     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+    <view class='top-selected' bindtap='carTypeoptions'>
+     <text>{{carType_name}}</text>
+     <image src='https://i.loli.net/2021/06/03/7ns1dcTHtS5YGEN.png'></image>
+     <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{carType}}" wx:key="unique">
+     <cover-view class="selected" bindtap="carTypeSelected" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
     </view>
   </view>
   <view class='top'>
     <view class='top-text'>程序号</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <text>{{area_name}}</text>
-     <image src='https://i.loli.net/2021/02/04/rOVJZ4vk1hCXl23.png'></image>
+    <view class='top-selected' bindtap='weldSpotProgramOptions'>
+     <text>{{weldSpotProgram_name}}</text>
+     <image src='https://i.loli.net/2021/06/03/6Dg7jpbxvXfhiO5.png'></image>
+     <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{weldSpotProgram}}" wx:key="unique">
+     <cover-view class="selected" bindtap="weldSpotProgramSelected" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
     </view>
   </view>
   <view class='top'>
     <view class='top-text'>焊点编号</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <text>{{area_name}}</text>
+    <view class='top-selected1'  >
+     <text>{{spot_name}}</text>
     </view>
   </view>
   <view class='top'>
     <view class='top-text'>板厚1（mm）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <text>{{area_name}}</text>
+    <view class='top-selected1'  >
+     <text>{{sheet1_name}}</text>
     </view>
   </view>
   <view class='top'>
     <view class='top-text'>板厚2（mm）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <text>{{area_name}}</text>
+    <view class='top-selected1'  >
+     <text>{{sheet2_name}}</text>
     </view>
   </view>
   <view class='top'>
     <view class='top-text'>板厚3（mm）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <text>{{area_name}}</text>
+    <view class='top-selected1'  >
+     <text>{{sheet3_name}}</text>
     </view>
   </view>
   <view class='top'>
     <view class='top-text'>板厚4（mm）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <text>{{area_name}}</text>
+    <view class='top-selected1'  >
+     <text>{{sheet4_name}}</text>
     </view>
   </view>
   <!--焊接参数框-->
@@ -76,122 +110,136 @@
 </view>
 <view class='top'>
     <view class='top-text'>预压时间（ms）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2' >
+     <input disabled = "{{inputshow}}" type="digit" value="{{preloadingTime}}" style="color:{{font_color}};" bindinput="preloadingTimeipt"></input>
     </view>
   </view>
 <view class='top'>
     <view class='top-text'>预热时间（ms）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{preheatingTime}}" style="color:{{font_color}};" bindinput="preheatingTimeipt"></input>
     </view>
   </view>
   <view class='top'>
     <view class='top-text'>预热电流（KA）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{preheatingCurrent}}" style="color:{{font_color}};" bindinput="preheatingCurrentipt"></input>
     </view>
   </view>
   <view class='top'>
     <view class='top-text'>冷却时间（ms）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{coolingTime}}" style="color:{{font_color}};" bindinput="coolingTimeipt"></input>
     </view>
   </view>
   <view class='top'>
     <view class='top-text'>上升斜坡（ms）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{risslopeTime}}" style="color:{{font_color}};" bindinput="risslopeTimeipt"></input>
     </view>
   </view>
     <view class='top'>
     <view class='top-text'>起始电流（KA）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{startCurrent}}" style="color:{{font_color}};" bindinput="startCurrentipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>终止电流（KA）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{endCurrent}}" style="color:{{font_color}};" bindinput="endCurrentipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>焊接电流（KA）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{mainWeldCurrent}}" style="color:{{font_color}};" bindinput="mainWeldCurrentipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>焊接时间（ms）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{mainWeldTime}}" style="color:{{font_color}};" bindinput="mainWeldTimeipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>下降斜坡（ms）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{downslopeTime}}" style="color:{{font_color}};" bindinput="downslopeTimeipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>起始电流（KA）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{startCurrent1}}" style="color:{{font_color}};" bindinput="startCurrent1ipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>终止电流（KA）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{endCurrent1}}" style="color:{{font_color}};" bindinput="endCurrent1ipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>脉冲</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{impulse}}" style="color:{{font_color}};" bindinput="impulseipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>脉冲间隔（ms）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{intervalTime}}" style="color:{{font_color}};" bindinput="intervalTimeipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>保持时间（ms）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{holdTime}}" style="color:{{font_color}};" bindinput="holdTimeipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>焊接压力（KN）</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{inputshow}}" type="digit" value="{{weldPressure}}" style="color:{{font_color}};" bindinput="weldPressureipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>修磨点数</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{dressinputshow}}" type="number" value="{{dressingPoints}}" style="color:{{dressfont_color}};" bindinput="dressingPointsipt"></input>
     </view>
   </view>
       <view class='top'>
     <view class='top-text'>修磨次数</view>
-    <view class='top-selected' bindtap='bindShowMsg'>
-     <input type="number"></input>
+    <view class='top-selected2'  >
+     <input disabled = "{{dressinputshow}}" type="number" value="{{dressingNumbers}}" style="color:{{dressfont_color}};" bindinput="dressingNumbersipt"></input>
     </view>
   </view>
-</view>
-<view class="editButton">
-    <button class="btn"  >
+  <view class='top' wx:if="{{!buttonshow}}">
+    <view class='top-text'>更改原因</view>
+    <view class='top-selected2'  bindtap='modifyReasonoptions'>
+      <text>{{modifyReason_name}}</text>
+     <image src='https://i.loli.net/2021/06/03/6Dg7jpbxvXfhiO5.png'></image>
+     <cover-view class='modifyreasonshowbox' wx:if="{{click}}">
+     <cover-view wx:for="{{modifyReason}}" wx:key="unique">
+     <cover-view class="selected" bindtap="modifyReasonSelected" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
+    </view>
+  </view>
+  <view class = 'empty'>
+  </view>
+
+<cover-view class="editButton">
+    <cover-view class="btn"  bindtap="paramQuery">
         查询
-    </button>
-    <button class="btn"  >
+    </cover-view>
+    <cover-view class="btn" wx:if = "{{buttonshow}}" bindtap = 'buttobshow'>
         更改
-    </button>
-    <button class="btn"  >
-       确认
-    </button>
-</view>
+    </cover-view>
+    <cover-view class="btn1" wx:if = "{{!buttonshow}}" bindtap="submitParam">
+        确认
+    </cover-view>
+</cover-view>
 

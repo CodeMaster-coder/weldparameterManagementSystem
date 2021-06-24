@@ -1,0 +1,272 @@
+<!--2.1总拼-->
+<watermark></watermark>
+<view class="aufbau1"  wx:if="{{boxshow1ab}}">
+<view class="leftside">
+<view class="aufbau1round">
+<view class="aufbau1num">{{count1ab}}</view>
+</view>
+<view class="title">
+2.1总拼
+</view>
+</view>
+<view class="middleside">
+<view class="middlesidetitle">
+任务分配
+</view>
+<view class="searchbox">
+  <input placeholder-class="place-holder" type="text" class="searchcube"  data-index="{{index}}" value="{{inputVal1AB}}" bindinput="inputTyping1AB"  />
+  <scroll-view class='scroll-view'   wx:if='{{viewShowed}}'  scroll-y>
+  <view wx:for="{{namelist1AB}}" wx:key="index" class="msg-item " >
+    <view class='user-name' bindtap='name1ab' data-index="{{index}}" >{{item}}</view>
+  </view>
+  </scroll-view>
+</view>
+</view>
+<view class="rightside">
+<view class="certainbtn" bindtap="enter1ab">确定</view>
+</view>
+</view>
+<!--2.2总拼-->
+<view class="aufbau1" wx:if="{{boxshow2ab}}">
+<view class="leftside">
+<view class="aufbau1round">
+<view class="aufbau1num">{{count2ab}}</view>
+</view>
+<view class="title">
+2.2总拼
+</view>
+</view>
+<view class="middleside">
+<view class="middlesidetitle">
+任务分配
+</view>
+<view class="searchbox">
+  <input class="place-holder" type="text" class="searchcube"  value="{{inputVal2AB}}" bindinput="inputTyping2AB"  />
+  <cover-view class='scroll-view' wx:if='{{viewShowed2AB}}' >
+  <cover-view wx:for="{{namelist}}" wx:key="index" class="msg-item " >
+    <cover-view class='user-name' bindtap='name2ab' data-index="{{index}}" >{{item}}</cover-view>
+  </cover-view>
+  </cover-view>
+</view>
+</view>
+<view class="rightside">
+<view class="certainbtn" bindtap="enter2ab">确定</view>
+</view>
+</view>
+<!--2.1底板主线-->
+<view class="aufbau1" wx:if="{{boxshow1ub}}">
+<view class="leftside">
+<view class="aufbau1round">
+<view class="aufbau1num">{{count1ub}}</view>
+</view>
+<view class="title">
+  2.1底板主线
+</view>
+</view>
+<view class="middleside">
+<view class="middlesidetitle">
+任务分配
+</view>
+<view class="searchbox">
+  <input class="place-holder" type="text" class="searchcube"  value="{{inputVal1UB}}" bindinput="inputTyping1UB"  />
+  <cover-view class='scroll-view' wx:if='{{viewShowed1UB}}' >
+  <cover-view wx:for="{{namelist}}" wx:key="index" class="msg-item " >
+    <cover-view class='user-name' bindtap='name1ub' data-index="{{index}}" >{{item}}</cover-view>
+  </cover-view>
+  </cover-view>
+</view>
+</view>
+<view class="rightside">
+<view class="certainbtn" bindtap="enter1ub">确定</view>
+</view>
+</view>
+<!--2.2底板主线-->
+<view class="aufbau1" wx:if="{{boxshow2ub}}">
+<view class="leftside">
+<view class="aufbau1round">
+<view class="aufbau1num">{{count2ub}}</view>
+</view>
+<view class="title">
+  2.2底板主线
+</view>
+</view>
+<view class="middleside">
+<view class="middlesidetitle">
+任务分配
+</view>
+<view class="searchbox">
+  <input class="place-holder" type="text" class="searchcube"  value="{{inputVal2UB}}" bindinput="inputTyping2UB"  />
+  <cover-view class='scroll-view' wx:if='{{viewShowed2UB}}' >
+  <cover-view wx:for="{{namelist}}" wx:key="index" class="msg-item " >
+    <cover-view class='user-name' bindtap='name2ub' data-index="{{index}}" >{{item}}</cover-view>
+  </cover-view>
+  </cover-view>
+</view>
+</view>
+<view class="rightside">
+<view class="certainbtn" bindtap="enter2ub">确定</view>
+</view>
+</view>
+<!--2.1底板分拼-->
+<view class="aufbau1" wx:if="{{boxshow1ug}}">
+<view class="leftside">
+<view class="aufbau1round">
+<view class="aufbau1num">{{count1ug}}</view>
+</view>
+<view class="title">
+  2.1底板分拼
+</view>
+</view>
+<view class="middleside">
+<view class="middlesidetitle">
+任务分配
+</view>
+<view class="searchbox">
+  <input class="place-holder" type="text" class="searchcube"  value="{{inputVal1UG}}" bindinput="inputTyping1UG"  />
+  <cover-view class='scroll-view' wx:if='{{viewShowed1UG}}' >
+  <cover-view wx:for="{{namelist}}" wx:key="index" class="msg-item " >
+    <cover-view class='user-name' bindtap='name1ug' data-index="{{index}}" >{{item}}</cover-view>
+  </cover-view>
+  </cover-view>
+</view>
+</view>
+<view class="rightside">
+<view class="certainbtn" bindtap="enter1ug">确定</view>
+</view>
+</view>
+<!--2.2底板分拼-->
+<view class="aufbau1" wx:if="{{boxshow2ug}}">
+<view class="leftside">
+<view class="aufbau1round">
+<view class="aufbau1num">{{count2ug}}</view>
+</view>
+<view class="title">
+  2.2底板分拼
+</view>
+</view>
+<view class="middleside">
+<view class="middlesidetitle">
+任务分配
+</view>
+<view class="searchbox">
+  <input class="place-holder" type="text" class="searchcube"  value="{{inputVal2UG}}" bindinput="inputTyping2UG"  />
+  <cover-view class='scroll-view' wx:if='{{viewShowed2UG}}' >
+  <cover-view wx:for="{{namelist}}" wx:key="index" class="msg-item " >
+    <cover-view class='user-name' bindtap='name2ug' data-index="{{index}}" >{{item}}</cover-view>
+  </cover-view>
+  </cover-view>
+</view>
+</view>
+<view class="rightside">
+<view class="certainbtn" bindtap="enter2ug">确定</view>
+</view>
+</view>
+<!--2.1侧围-->
+<view class="aufbau1" wx:if="{{boxshow1st}}">
+<view class="leftside">
+<view class="aufbau1round">
+<view class="aufbau1num">{{count1st}}</view>
+</view>
+<view class="title">
+  2.1侧围
+</view>
+</view>
+<view class="middleside">
+<view class="middlesidetitle">
+任务分配
+</view>
+<view class="searchbox">
+  <input class="place-holder" type="text" class="searchcube"  value="{{inputVal1ST}}" bindinput="inputTyping1ST"  />
+  <cover-view class='scroll-view' wx:if='{{viewShowed1ST}}' >
+  <cover-view wx:for="{{namelist}}" wx:key="index" class="msg-item " >
+    <cover-view class='user-name' bindtap='name1st' data-index="{{index}}" >{{item}}</cover-view>
+  </cover-view>
+  </cover-view>
+</view>
+</view>
+<view class="rightside">
+<view class="certainbtn" bindtap="enter1st">确定</view>
+</view>
+</view>
+<!--2.2侧围-->
+<view class="aufbau1" wx:if="{{boxshow2st}}">
+<view class="leftside">
+<view class="aufbau1round">
+<view class="aufbau1num">{{count2st}}</view>
+</view>
+<view class="title">
+  2.2侧围
+</view>
+</view>
+<view class="middleside">
+<view class="middlesidetitle">
+任务分配
+</view>
+<view class="searchbox" >
+  <input class="place-holder" type="text" class="searchcube"  value="{{inputVal2ST}}" bindinput="inputTyping2ST"  />
+  <cover-view class='scroll-view' wx:if='{{viewShowed2ST}}' >
+  <cover-view wx:for="{{namelist}}" wx:key="index" class="msg-item " >
+    <cover-view class='user-name' bindtap='name2st' data-index="{{index}}" >{{item}}</cover-view>
+  </cover-view>
+  </cover-view>
+</view>
+</view>
+<view class="rightside">
+<view class="certainbtn" bindtap="enter2st">确定</view>
+</view>
+</view>
+<!--2.1门盖-->
+<view class="aufbau1"  wx:if="{{boxshow1abt}}">
+<view class="leftside">
+<view class="aufbau1round">
+<view class="aufbau1num">{{count1abt}}</view>
+</view>
+<view class="title">
+  2.1门盖
+</view>
+</view>
+<view class="middleside">
+<view class="middlesidetitle">
+任务分配
+</view>
+<view class="searchbox">
+  <input class="place-holder" type="text" class="searchcube"  value="{{inputVal1ABT}}" bindinput="inputTyping1ABT"  />
+  <cover-view class='scroll-view' wx:if='{{viewShowed1ABT}}' >
+  <cover-view wx:for="{{namelist}}" wx:key="index" class="msg-item " >
+    <cover-view class='user-name' bindtap='name1abt' data-index="{{index}}" >{{item}}</cover-view>
+  </cover-view>
+  </cover-view>
+</view>
+</view>
+<view class="rightside">
+<view class="certainbtn" bindtap="enter1abt">确定</view>
+</view>
+</view>
+<!--2.2门盖-->
+<view class="aufbau1" wx:if="{{boxshow2abt}}">
+<view class="leftside">
+<view class="aufbau1round">
+<view class="aufbau1num">{{count2abt}}</view>
+</view>
+<view class="title">
+  2.2门盖
+</view>
+</view>
+<view class="middleside">
+<view class="middlesidetitle">
+任务分配
+</view>
+<view class="searchbox">
+  <input class="place-holder" type="text" class="searchcube"  value="{{inputVal2ABT}}" bindinput="inputTyping2ABT"  />
+  <cover-view class='scroll-view' wx:if='{{viewShowed2ABT}}' >
+  <cover-view wx:for="{{namelist}}" wx:key="index" class="msg-item " >
+    <cover-view class='user-name' bindtap='name2abt' data-index="{{index}}" >{{item}}</cover-view>
+  </cover-view>
+  </cover-view>
+</view>
+</view>
+<view class="rightside">
+<view class="certainbtn" bindtap="enter2abt">确定</view>
+</view>
+</view>
+

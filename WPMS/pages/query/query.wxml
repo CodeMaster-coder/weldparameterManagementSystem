@@ -1,0 +1,60 @@
+<!--pages/query/query.wxml-->
+<watermark></watermark>
+<view>
+<view class="basicInfoTitle">焊枪选择</view>
+<view>
+  <view class='top'>
+    <view class='top-text'>工段</view>
+    <view class='top-selected' bindtap='areaoptions' >
+     <text>{{area_name}}</text>
+     <image src='https://i.loli.net/2021/06/03/KtpH1D8dhjxXsfe.png'></image>
+     <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{area}}" wx:key="unique">
+     <cover-view class="selected" bindtap="selectedone" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
+    </view>
+  </view>
+</view>
+<view class='top'>
+    <view class='top-text'>班组</view>
+    <view class='top-selected' bindtap='subAreaoptions' >
+     <text>{{subArea_name}}</text>
+     <image src='https://i.loli.net/2021/06/03/19lKJj8GyV7ehnW.png'></image>
+    <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{subArea}}" wx:key="unique">
+     <cover-view class="selected" bindtap="subAreaSelected" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>焊枪</view>
+    <view class='top-selected' bindtap='gunoptions'>
+     <text>{{gun_name}}</text>
+     <image src='https://i.loli.net/2021/06/03/Me4bRT5DZAlIWfS.png'></image>
+    <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{gun}}" wx:key="unique">
+     <cover-view class="selected" bindtap="gunSelected" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
+    </view>
+  </view>
+  <view class='top'>
+    <view class='top-text'>车型</view>
+    <view class='top-selected' bindtap='carTypeoptions'>
+     <text>{{carType_name}}</text>
+     <image src='https://i.loli.net/2021/06/03/7ns1dcTHtS5YGEN.png'></image>
+     <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{carType}}" wx:key="unique">
+     <cover-view class="selected" bindtap="carTypeSelected" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
+    </view>
+  </view>
+  <view class="querybtn">
+  <view class="btn" bindtap="queryparam">
+  查询该焊枪的参数
+</view>
+  </view>
+</view>

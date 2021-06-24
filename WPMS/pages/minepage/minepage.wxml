@@ -1,0 +1,87 @@
+<!--pages/minepage/minepage.wxml-->
+<view class="header">
+<view class = 'chntitle'>
+  <image src="{{avatarUrl}}"></image> 
+</view>
+<view class = 'engtitle'>
+<view>{{employeeId}}</view>
+<view>{{employeeName}}</view>
+<view class="login" wx:if="{{login}}" bindtap="relogin">登录</view>
+<view class="exit" wx:if="{{!login}}" bindtap="exit">退出</view>
+</view>
+</view>
+<view class="firstline" bindtap="skiproutineexam" wx:if="{{lowauth}}">
+  <view class="all">
+<view class="leftside">
+<view class="imagebox">
+  <image src="https://i.loli.net/2021/06/12/2AlTxPDO5SLFyVH.png"></image>
+</view>
+</view>
+<view class="middleside">
+<view class="title">焊点常规检查</view>
+</view>
+<view class="rightside">
+<image src="https://i.loli.net/2021/06/10/LFU1Ruo59BTVwqO.png"></image>
+</view>
+</view>
+</view>
+<view class="firstline" bindtap="skipauthentication"  wx:if="{{highauth}}">
+  <view class="all">
+<view class="leftside">
+<view class="imagebox">
+  <image src="https://i.loli.net/2021/06/12/eYvxUuV9XoSN2gC.png"></image>
+</view>
+</view>
+<view class="middleside">
+<view class="title">人员授权审批</view>
+</view>
+<view class="rightside">
+<image src="https://i.loli.net/2021/06/10/LFU1Ruo59BTVwqO.png"></image>
+</view>
+</view>
+</view>
+<view class="firstline" bindtap="skipassignment" wx:if="{{middleauth}}">
+  <view class="all">
+<view class="leftside">
+<view class="imagebox">
+  <image src="https://i.loli.net/2021/06/12/czkiI5EbaDqro3P.png"></image>
+</view>
+</view>
+<view class="middleside">
+<view class="title">常规任务分配</view>
+</view>
+<view class="rightside">
+<image src="https://i.loli.net/2021/06/10/LFU1Ruo59BTVwqO.png"></image>
+</view>
+</view>
+</view>
+<view class="firstline" bindtap="skipretreat" wx:if="{{highauth}}">
+  <view class="all">
+<view class="leftside">
+<view class="imagebox">
+  <image src="https://i.loli.net/2021/06/12/ROizGsUPudc1MWj.png"></image>
+</view>
+</view>
+<view class="middleside">
+<view class="titlelast">不合格焊点处理</view>
+</view>
+<view class="rightside">
+<image src="https://i.loli.net/2021/06/10/LFU1Ruo59BTVwqO.png"></image>
+</view>
+</view>
+</view>
+<view class="firstline" bindtap="skipmetal" wx:if="{{highauth}}">
+  <view class="all">
+<view class="leftside">
+<view class="imagebox">
+  <image src="https://i.loli.net/2021/06/22/TQB9Pd1Cp7OuszZ.png"></image>
+</view>
+</view>
+<view class="middleside">
+<view class="titlelast">焊点金相确认</view>
+</view>
+<view class="rightside">
+<image src="https://i.loli.net/2021/06/10/LFU1Ruo59BTVwqO.png"></image>
+</view>
+</view>
+</view>

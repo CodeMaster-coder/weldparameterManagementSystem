@@ -1,0 +1,44 @@
+<!--pages/routineexam/routineexam.wxml-->
+<watermark></watermark>
+<view wx:for="{{spot}}" wx:key = 'unique'>
+<view class="linebox">
+<view class="spotnumber">
+<view class="subspotnumber">焊点编号:</view>
+<view>{{item.weldSpotNumber}}</view>
+</view>
+<view class="detailinfo">
+<view class="title">
+<view class="gun"><view>车</view><view>型:</view></view>
+<view class="gun"><view>焊</view><view>枪:</view></view>
+<view class="gun"><view>板</view><view>厚</view><view>1</view><view>(mm):</view></view>
+<view class="gun"><view>板</view><view>厚</view><view>2</view><view>(mm):</view></view>
+<view class="gun"><view>板</view><view>厚</view><view>3</view><view>(mm):</view></view>
+<view class="gun"><view>板</view><view>厚</view><view>4</view><view>(mm):</view></view>
+<view class="gun"><view>变</view><view>更</view><view>原</view><view>因:</view></view>
+</view>
+<view class="content">
+  <view class="subcontent">{{item.carType}}</view>
+<view class="subcontent">{{item.gun}}</view>
+<view class="subcontent">{{item.sheet1}}</view>
+<view class="subcontent">{{item.sheet2}}</view>
+<view class="subcontent">{{item.sheet3}}</view>
+<view class="subcontent">{{item.sheet4}}</view>
+<view class="subcontent">{{item.modifyReason}}</view>
+</view>
+
+<checkbox-group bindchange="checkboxChange" class="checkboxs">
+<checkbox wx:if="{{checkshow1}}" value='目视检验' checked="{{checked}}">目视检验</checkbox>
+<checkbox wx:if="{{checkshow1}}" value='非破坏性检验' checked="{{checked}}">非破坏性检验</checkbox>
+<checkbox wx:if="{{checkshow1}}" value='超声波检验'checked="{{checked}}">超声波检验</checkbox>
+<checkbox class="lastcheckbox"  wx:if="{{checkshow}}" value='质量不合格'checked="{{checked}}">质量不合格</checkbox>
+<view class="certainbtn" bindtap="certainbtn" data-index="{{index}}">
+确定
+</view>
+</checkbox-group>
+
+</view>
+
+</view>
+
+</view>
+

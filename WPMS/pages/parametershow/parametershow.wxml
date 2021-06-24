@@ -1,0 +1,64 @@
+<!--pages/parametershow/parametershow.wxml-->
+<watermark></watermark>
+<view class="mainbox">
+<view class="title" >
+<view class="subtitle">焊枪</view>
+<view class="subtitle">车型</view>
+<view class="subtitle">焊点编号</view>
+<view class="subtitle">程序号</view>
+<view class="subtitle">板材1(mm)</view>
+<view class="subtitle">板材2(mm)</view>
+<view class="subtitle">板材3(mm)</view>
+<view class="subtitle">板材4(mm)</view>
+<view class="subtitle">预压时间(ms)</view>
+<view class="subtitle">预热时间(ms)</view>
+<view class="subtitle">预热电流(KA)</view>
+<view class="subtitle">预热冷却(ms)</view>
+<view class="subtitle">上升斜坡(ms)</view>
+<view class="subtitle">起始电流(KA)</view>
+<view class="subtitle">终止电流(KA)</view>
+<view class="subtitle">焊接时间(ms)</view>
+<view class="subtitle">焊接电流(KA)</view>
+<view class="subtitle">下降斜坡(ms)</view>
+<view class="subtitle">起始电流(KA)</view>
+<view class="subtitle">终止电流(KA)</view>
+<view class="subtitle">脉冲数</view>
+<view class="subtitle">冷却时间(ms)</view>
+<view class="subtitle">保持时间(ms)</view>
+<view class="subtitle">焊接压力(KN)</view>
+<view class="subtitle">修磨节点</view>
+<view class="subtitle">修磨次数</view>
+</view>
+<scroll-view enable-flex="true" class='scroll-view'  scroll-x>
+<view wx:for="{{spotparam}}" wx:key = 'unique' class="content">
+  
+<view class="subcontent">{{gun_name}}</view>
+<view class="subcontent">{{carType_name}}</view>
+<view class="subcontent1 font-break">{{item.weldSpotNumber}}</view>
+<view class="subcontent">{{item.weldSpotProgram}}</view>
+<view class="subcontent">{{item.sheet1}}</view>
+<view class="subcontent">{{item.sheet2}}</view>
+<view class="subcontent">{{item.sheet3}}</view>
+<view class="subcontent">{{item.sheet4}}</view>
+<view class="subcontent">{{item.preloadingTime}}</view>
+<view class="subcontent">{{item.preheatingTime}}</view>
+<view class="subcontent">{{item.preheatingCurrent}}</view>
+<view class="subcontent">{{item.coolingTime}}</view>
+<view class="subcontent">{{item.risslopeTime}}</view>
+<view class="subcontent">{{item.startCurrent}}</view>
+<view class="subcontent">{{item.endCurrent}}</view>
+<view class="subcontent">{{item.mainWeldTime}}</view>
+<view class="subcontent">{{item.mainWeldCurrent}}</view>
+<view class="subcontent">{{item.downslopeTime}}</view>
+<view class="subcontent">{{item.startCurrent1}}</view>
+<view class="subcontent">{{item.endCurrent1}}</view>
+<view class="subcontent">{{item.impulse}}</view>
+<view class="subcontent">{{item.intervalTime}}</view>
+<view class="subcontent">{{item.holdTime}}</view>
+<view class="subcontent">{{item.weldPressure}}</view>
+<view class="subcontent">{{item.dressingPoints}}</view>
+<view class="subcontent">{{item.dressingNumbers}}</view>
+
+</view>
+</scroll-view>
+</view>

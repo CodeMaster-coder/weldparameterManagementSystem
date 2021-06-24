@@ -1,0 +1,5 @@
+<view class='water-mark-mask'>
+    <view class='row' wx:for="{{rows}}" wx:key="index">
+      <view class='col' wx:for="{{cols}}" wx:key="index" >{{text}}</view>
+    </view>
+  </view>

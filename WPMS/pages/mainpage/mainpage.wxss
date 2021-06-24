@@ -1,0 +1,80 @@
+/* pages/mainpage/mainpage.wxss */
+.header{
+  width: 100%;
+height: 250rpx;
+background-color: #F0F8FF;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.chntitle{
+  font-size: 55rpx;
+  display: flex;
+flex-direction: row;
+width: 250rpx;
+justify-content: space-between;
+}
+.engtitle{
+  display: flex;
+  flex-direction: row;
+  color: #2F4F4F;
+}
+.firstline{
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #f4f6f8;
+  border-top:3rpx solid  	#D3D3D3;
+  border-bottom:3rpx solid  	#D3D3D3;
+}
+.all{
+  width: 80%;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+}
+.leftside{
+  height: 100%;
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagebox{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 100rpx;
+  background-color:white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.imagebox image{
+  width: 75rpx;
+  height: 75rpx;
+}
+.middleside{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  font-size: 39rpx;
+  font-family: system-ui;
+}
+.rightside{
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightside image{
+  width: 60rpx;
+  height: 60rpx;
+}

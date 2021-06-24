@@ -1,0 +1,87 @@
+/* pages/query/query.wxss */
+/* 基本信息样式 */
+.basicInfoTitle{
+
+  height: 60rpx;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-size: larger;
+  border-bottom: 5rpx solid #000000;
+  background-color: #c0e2ec;
+  text-align: center;
+  line-height: 60rpx;
+  border-top-left-radius: 30rpx;
+  border-top-right-radius: 30rpx;
+}
+.top{
+  display: flex;
+
+  height: 65rpx;
+  padding: 0 ;
+  line-height: 65rpx;
+  font-size: 26rpx;
+  border-bottom: 3rpx solid #A9A9A9;
+  background-color: #f4f6f8;
+ }
+ .top-text{
+  float: left;
+  text-align: center;
+  margin-left: 5rpx;
+ }
+ /* 下拉框 */
+ .top-selected{
+  float: right;
+  text-align: left;
+  width: 270rpx;
+
+ }
+ /* 下拉图标 */
+ .top-selected image{
+  height:55rpx;
+  width:55rpx;
+  position: absolute;
+  right: 0rpx;
+  
+
+ }
+ .showbox{
+  background-color: #e3f0f8;
+  width: 200rpx;
+  float: right;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+  overflow: hidden;
+  text-align: left;
+  animation: myfirst 0.5s;
+  font-size: 30rpx;
+  margin-top:65rpx
+ }
+ .selected{
+
+  width: 100%;
+  height: 65rpx;
+  position: relative;
+  line-height: 65rpx;
+  border-bottom: 1px solid black;
+  
+ }
+ .querybtn{
+   height: 65rpx;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .btn{
+   width: 50%;
+  background-color: #2bbfec;
+  border: 2rpx solid white;
+  text-align: center;
+  line-height: 65rpx;
+  margin-top: 30rpx;
+  border-radius: 20rpx;
+ }
+ .top-selected text{
+  position: absolute;
+  right:70rpx;
+  color:#696969;
+}

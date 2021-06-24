@@ -1,0 +1,36 @@
+<!--pages/query/query.wxml-->
+<watermark></watermark>
+<view>
+<view class="basicInfoTitle">班组选择</view>
+<view>
+  <view class='top'>
+    <view class='top-text'>工段</view>
+    <view class='top-selected' bindtap='areaoptions' >
+     <text>{{area_name}}</text>
+     <image src='https://i.loli.net/2021/06/03/KtpH1D8dhjxXsfe.png'></image>
+     <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{area}}" wx:key="unique">
+     <cover-view class="selected" bindtap="selectedone" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
+    </view>
+  </view>
+</view>
+<view class='top'>
+    <view class='top-text'>班组</view>
+    <view class='top-selected' bindtap='subAreaoptions' >
+     <text>{{subArea_name}}</text>
+     <image src='https://i.loli.net/2021/06/03/19lKJj8GyV7ehnW.png'></image>
+    <cover-view class='showbox' wx:if="{{click}}">
+     <cover-view wx:for="{{subArea}}" wx:key="unique">
+     <cover-view class="selected" bindtap="subAreaSelected" data-name ='{{item}}'>{{item}}</cover-view>
+     </cover-view>
+     </cover-view>
+    </view>
+  </view>
+  <view class="querybtn">
+  <view class="btn" bindtap="queryparam">
+  查询该班组的修磨
+</view>
+  </view>
+</view>

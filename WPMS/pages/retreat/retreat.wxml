@@ -1,0 +1,59 @@
+<!--pages/routineexam/routineexam.wxml-->
+<watermark></watermark>
+<view wx:for="{{spot}}" wx:key = 'unique'>
+<view class="linebox">
+<view class="spotnumber">
+<view class="subspotnumber">焊点编号:</view>
+<view>{{item.weldSpotNumber}}</view>
+</view>
+<view class="detailinfo">
+<view class="title">
+<view class="gun"><view>车</view><view>型:</view></view>
+<view class="gun"><view>焊</view><view>枪:</view></view>
+<view class="gun"><view>板</view><view>厚</view><view>1</view><view>(mm):</view></view>
+<view class="gun"><view>板</view><view>厚</view><view>2</view><view>(mm):</view></view>
+<view class="gun"><view>板</view><view>厚</view><view>3</view><view>(mm):</view></view>
+<view class="gun"><view>板</view><view>厚</view><view>4</view><view>(mm):</view></view>
+
+</view>
+<view class="content">
+  <view class="subcontent">{{item.carType}}</view>
+<view class="subcontent">{{item.gun}}</view>
+<view class="subcontent">{{item.sheet1}}</view>
+<view class="subcontent">{{item.sheet2}}</view>
+<view class="subcontent">{{item.sheet3}}</view>
+<view class="subcontent">{{item.sheet4}}</view>
+
+</view>
+
+<view>
+<view class="rightside">
+<view class="title">
+  <view class="gun"><view>变</view><view>更</view><view>原</view><view>因:</view></view>
+<view class="gun"><view>变</view><view>更</view><view>人:</view></view>
+<view class="gun"><view>变</view><view>更</view><view>时</view><view>间:</view></view>
+<view class="gun"><view>检</view><view>查</view><view>方</view><view>式:</view></view>
+<view class="gun"><view>检</view><view>查</view><view>人:</view></view>
+<view class="gun"><view>检</view><view>查</view><view>时</view><view>间:</view></view>
+
+</view>
+<view class="content">
+  <view class="subcontent">{{item.modifyReason}}</view>
+  <view class="subcontent">{{item.modifyBody}}</view>
+<view class="subcontent">{{item.modifyTime}}</view>
+<view class="subcontent">常规检查</view>
+<view class="subcontent">{{item.odinaryCheckBody}}</view>
+<view class="subcontent">{{item.odinaryCheckTime}}</view>
+
+</view>
+</view>
+<view class="certainbtn" bindtap="certainbtn" data-index="{{index}}">
+已处理
+</view>
+</view>
+
+</view>
+
+</view>
+
+</view>

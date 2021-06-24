@@ -1,0 +1,59 @@
+<!--pages/mainpage/mainpage.wxml-->
+<view class="header">
+<view class = 'chntitle'>
+  <view>焊</view><view>接</view><view>参</view><view>数</view> 
+</view>
+<view class = 'engtitle'>
+<view>weld</view>
+<view>parameter</view>
+</view>
+</view>
+
+<view class="firstline" bindtap="skip1">
+  <view class="all">
+<view class="leftside">
+<view class="imagebox">
+  <image src="https://i.loli.net/2021/06/21/ZvwF9YtyhRIcQg5.png"></image>
+</view>
+</view>
+<view class="middleside">
+<view class="title">焊接参数查询</view>
+</view>
+<view class="rightside">
+<image src="https://i.loli.net/2021/06/10/LFU1Ruo59BTVwqO.png"></image>
+</view>
+</view>
+</view>
+<view class="firstline" bindtap="skip" wx:if="{{highauth}}">
+  <view class="all">
+<view class="leftside">
+<view class="imagebox">
+  <image src="https://i.loli.net/2021/06/21/RLYzQEJOeucF368.png"></image>
+</view>
+</view>
+<view class="middleside">
+<view class="title">焊接参数更改</view>
+</view>
+<view class="rightside">
+<image src="https://i.loli.net/2021/06/10/LFU1Ruo59BTVwqO.png"></image>
+</view>
+</view>
+</view>
+<view class="firstline" bindtap="skip2" wx:if="{{highauth}}">
+  <view class="all">
+<view class="leftside">
+<view class="imagebox">
+  <image src="https://i.loli.net/2021/06/22/AfP9kdKVsbuO6By.png"></image>
+</view>
+</view>
+<view class="middleside">
+<view class="title">修磨数据统计</view>
+</view>
+<view class="rightside">
+<image src="https://i.loli.net/2021/06/10/LFU1Ruo59BTVwqO.png"></image>
+</view>
+</view>
+</view>
+
+
+
