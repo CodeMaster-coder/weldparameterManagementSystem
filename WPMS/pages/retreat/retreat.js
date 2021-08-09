@@ -77,10 +77,17 @@ Page({
       success: function(res) {
         console.log(res.data)
         let spot = JSON.parse(res.data)
-        console.log(spot)
+        console.log(spot.length)
+        if(spot.length == 0){
+          wx.showToast({
+            title: '没有等待处理的不合格焊点',
+            icon: 'none',
+            duration: 2000
+          })
+        }else{
         that.setData({
           spot:spot
-        })
+        })}
       }
     })
   },

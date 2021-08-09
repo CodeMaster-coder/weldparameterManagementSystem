@@ -126,13 +126,16 @@ Page({
       this.setData({
         login:false,
         lowauth:true,
+        highauth:false,
         middleauth:true
       })
     }
     else if( this.data.useinfo != ''&this.data.authority > 0){
       this.setData({
         login:false,
-        lowauth:true
+        lowauth:true,
+        highauth:false,
+        middleauth:false
       })
     }
   },

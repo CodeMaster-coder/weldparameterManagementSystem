@@ -1,5 +1,6 @@
 /* pages/weldparameter/weldparameter.wxss */
 /* 基本信息标题样式 */
+
 .basicInfoTitle{
 
   height: 60rpx;

@@ -817,11 +817,32 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success: function(res) {
+
         // console.log(res.data)
-        console.log(res.data.value)
+        console.log(res.data.value.length)
         console.log(res.data.employeeName)
         let name = res.data.employeeName
         let value = JSON.parse(res.data.value);
+        if(value.length == 0){
+          wx.showToast({
+            title: '没有等待分配的任务',
+            icon: 'none',
+            duration: 2000
+          })
+          that.setData({
+            boxshow1ug:false,
+            boxshow1ub:false,
+            boxshow1ab:false,
+            boxshow1abt:false,
+            boxshow1st:false,
+            boxshow2ug:false,
+            boxshow2ub:false,
+            boxshow2ab:false,
+            boxshow2abt:false,
+            boxshow2st:false,
+          })
+        }else{
+
         console.log(value)
         that.setData({
           value:value,
@@ -938,7 +959,7 @@ Page({
           })
         }
 
-      }
+      }}
     })
 
   },

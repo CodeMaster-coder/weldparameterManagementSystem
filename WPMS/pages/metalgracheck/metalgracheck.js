@@ -74,10 +74,17 @@ Page({
       success: function(res) {
         console.log(res.data)
         let spot = JSON.parse(res.data)
-        console.log(spot)
+        console.log(spot.length)
+        if(spot.length == 0){
+          wx.showToast({
+            title: '没有等待确认金相结果的焊点',
+            icon: 'none',
+            duration: 2000
+          })
+        }else{
         that.setData({
           spot:spot
-        })
+        })}
       }
     })
   },

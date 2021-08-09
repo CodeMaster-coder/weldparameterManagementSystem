@@ -1,5 +1,7 @@
 <!--pages/dressdata/dressdata.wxml-->
 <watermark></watermark>
 <view class="container1">
-<ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" force-use-old-canvas='true'></ec-canvas>
+<ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" ></ec-canvas>
+<!-- 真机调试时启用 -->
+<!-- <ec-canvas id="mychart-dom-line" canvas-id="mychart-line" ec="{{ ec }}" force-use-old-canvas='true'></ec-canvas> -->
 </view>

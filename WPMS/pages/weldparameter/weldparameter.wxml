@@ -2,6 +2,7 @@
 <!--主框-->
 
 <!--焊点基本信息框-->
+
 <watermark></watermark>
 <view class="basicInfoTitle" >
     焊点基本信息
@@ -242,4 +243,5 @@
         确认
     </cover-view>
 </cover-view>
+
 

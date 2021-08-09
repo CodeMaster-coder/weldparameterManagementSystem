@@ -19,7 +19,7 @@
 .scroll-view{
   display: flex;
   flex-direction: row;
-  width:auto;
+  width:200000rpx;
   overflow:hidden;
   white-space:nowrap;
   margin-left: 180rpx;

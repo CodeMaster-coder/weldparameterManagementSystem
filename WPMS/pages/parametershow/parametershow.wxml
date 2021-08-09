@@ -29,7 +29,7 @@
 <view class="subtitle">修磨节点</view>
 <view class="subtitle">修磨次数</view>
 </view>
-<scroll-view enable-flex="true" class='scroll-view'  scroll-x>
+<scroll-view  enable-flex="true" class='scroll-view'  scroll-x>
 <view wx:for="{{spotparam}}" wx:key = 'unique' class="content">
   
 <view class="subcontent">{{gun_name}}</view>

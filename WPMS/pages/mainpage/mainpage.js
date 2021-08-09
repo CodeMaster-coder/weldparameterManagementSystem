@@ -28,20 +28,7 @@ skip2(){
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    let userinfo1 = wx.getStorageSync('userinfo');
-    let userinfo2 = userinfo1[0];
-    if(userinfo2){
-    let authority1 = parseInt(userinfo2.authority)
-    this.setData({
-      authority:authority1,
-    })
-  }
-
-    if(this.data.useinfo != ''& this.data.authority > 2){
-      this.setData({
-        highauth:true,
-      })
-    }
+    
   },
 
   /**
@@ -55,7 +42,24 @@ skip2(){
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    let userinfo1 = wx.getStorageSync('userinfo');
+    let userinfo2 = userinfo1[0];
+    if(userinfo2){
+    let authority1 = parseInt(userinfo2.authority)
+    this.setData({
+      authority:authority1,
+    })
+  }
 
+    if(this.data.useinfo != ''& this.data.authority > 2){
+      this.setData({
+        highauth:true,
+      })
+    }else{
+      this.setData({
+        highauth:false,
+      })
+    }
   },
 
   /**

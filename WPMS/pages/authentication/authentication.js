@@ -170,13 +170,21 @@ Page({
       },
       success: function(res) {
         let obj = JSON.parse(res.data)
+        console.log(obj.length)
+        if(obj.length == 0){
+          wx.showToast({
+            title: '没有等待审批权限的注册人员',
+            icon: 'none',
+            duration: 2000
+          })
+        }else{
         for(var i=0;i<obj.length;i++){
           var obj1 = obj[i];
           user.push(obj1);
           that.setData({
             user:user
           })
-        }
+        }}
         // if(res.data.status = true){
         //   that.setData({
         //     user:res.data[0]
