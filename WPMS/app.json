@@ -1,20 +1,23 @@
 {
   "pages":[
+    "pages/routineexam/routineexam",
+    "pages/weldparameter/weldparameter",
+    "pages/parametershow/parametershow",
     "pages/authority1/authority1",
+    "pages/metalgracheck/metalgracheck",
     "pages/dressquery/dressquery",
     "pages/dressdata/dressdata",
-    "pages/metalgracheck/metalgracheck",
-    "pages/minepage/minepage",
     "pages/mainpage/mainpage",
-    "pages/routineexam/routineexam",
+    "pages/minepage/minepage",
+    
     "pages/assignment/assignment",
     "pages/authentication/authentication",
-    "pages/weldparameter/weldparameter",
+    
     "pages/retreat/retreat",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/query/query",
-    "pages/parametershow/parametershow"
+    "pages/query/query"
+   
   ],
   "window":{
     "backgroundTextStyle":"light",
